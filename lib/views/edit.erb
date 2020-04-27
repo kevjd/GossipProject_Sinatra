@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Édite ton potin <%= params['id'] %></title>
+  </head>
+  <body>
+    <h1>Édite ici!</h1>
+    <form action='/<%= params['id'] %>/edit' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author' value ="<%= gossips.author %>"/><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value="<%= gossips.content %>"/><br/>
+    </form>
+  </body>
+</html>
